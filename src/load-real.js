@@ -16,7 +16,7 @@ define([
     datax.prop(clone,"src",url);
     datax.prop(clone,"_src",url); // support for google slide embed
     noder.replace(clone,ifame);
-    hookSizing(clone);
+    ///hookSizing(clone);
   }
 
   return iframes.loadReal = loadReal;  

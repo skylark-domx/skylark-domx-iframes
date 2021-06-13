@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define([],function(){});
+define(["./iframes","./create","./lazy-load","./load-real","./replace"],function(){});
 //# sourceMappingURL=sourcemaps/main.js.map

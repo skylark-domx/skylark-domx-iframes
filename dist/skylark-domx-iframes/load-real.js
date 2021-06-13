@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["skylark-domx-noder","skylark-domx-data","./iframes","./hook-sizing"],function(r,a,e,o){return e.loadReal=function(e,l){l=l||{};var t=r.clone(e),n=l.url;n||(n=a.attr(t,l.urlAttrName||"data-url")),n=n.split("&")[0],a.prop(t,"src",n),a.prop(t,"_src",n),r.replace(t,ifame),o(t)}});
+define(["skylark-domx-noder","skylark-domx-data","./iframes","./hook-sizing"],function(r,a,e,o){return e.loadReal=function(e,o){o=o||{};var l=r.clone(e),t=o.url;t||(t=a.attr(l,o.urlAttrName||"data-url")),t=t.split("&")[0],a.prop(l,"src",t),a.prop(l,"_src",t),r.replace(l,ifame)}});
 //# sourceMappingURL=sourcemaps/load-real.js.map

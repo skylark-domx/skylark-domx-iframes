@@ -1,6 +1,6 @@
 define([
 	"skylark-domx-eventer",
-	"skylark-domx-datax",
+	"skylark-domx-data",
 	"skylark-domx-geom",
 	"./iframes",
 	"./load-real"
