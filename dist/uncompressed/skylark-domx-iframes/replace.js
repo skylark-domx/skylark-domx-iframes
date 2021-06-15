@@ -4,18 +4,29 @@ define([
   "skylark-domx-geom",
   "skylark-domx-styler",
   "./iframes",
+  "./create",
   "./load-real",
   "./lazy-load"
-],function(getQuery,noder,geom,styler,iframes,loadReal){
+],function(getQuery,noder,geom,styler,iframes,create,loadReal,lazyLoad){
   'use strict';
   
   function replace(link,options) {
     options = options || {};
 
+    /*
     var iframe = noder.createElement('iframe',{
       "className" : link.className, // inherit all the classes from the link
       "id" : link.id, // also inherit, giving more style control to the user
       "style" : { "border" : '1px solid #aaa'}
+    });
+    */
+
+    var ifarme =create({
+      "className" : link.className, // inherit all the classes from the link
+      "id" : link.id, // also inherit, giving more style control to the user
+      "style" : { 
+        "border" : '1px solid #aaa'
+      }
     });
     ///var url = link.href.replace(/edit/, 'embed');
     var url = options.url || link.href,

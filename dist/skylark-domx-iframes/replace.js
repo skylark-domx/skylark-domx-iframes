@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["skylark-langx-urls/getQuery","skylark-domx-noder","skylark-domx-geom","skylark-domx-styler","./iframes","./load-real","./lazy-load"],function(e,r,a,l,s,i){"use strict";return s.replace=function(s,t){t=t||{};var d=r.createElement("iframe",{className:s.className,id:s.id,style:{border:"1px solid #aaa"}}),h=t.url||s.href,o=t.size||e(s.search),n=t.holdingUrl;l.css(d,"width",o.width||"100%"),l.css(d,"minHeight",o.height||"300px"),o.height&&l.css(d,"maxHeight",o.height),a.inview(s,100)?i(d,{url:h}):lazyLoad(d,{url:h,holdingUrl:n}),r.replace(d,s)}});
+define(["skylark-langx-urls/getQuery","skylark-domx-noder","skylark-domx-geom","skylark-domx-styler","./iframes","./create","./load-real","./lazy-load"],function(e,r,a,i,l,s,t,d){"use strict";return l.replace=function(l,m){m=m||{},s({className:l.className,id:l.id,style:{border:"1px solid #aaa"}});var h=m.url||l.href,o=m.size||e(l.search),c=m.holdingUrl;i.css(iframe,"width",o.width||"100%"),i.css(iframe,"minHeight",o.height||"300px"),o.height&&i.css(iframe,"maxHeight",o.height),a.inview(l,100)?t(iframe,{url:h}):d(iframe,{url:h,holdingUrl:c}),r.replace(iframe,l)}});
 //# sourceMappingURL=sourcemaps/replace.js.map

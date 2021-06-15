@@ -53,5 +53,5 @@ define([
 		pending.push(iframe);
 	}
 
-	return iframes.lazyLoad = lazyload
+	return iframes.lazyLoad = lazyLoad
 });
